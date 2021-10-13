@@ -1,2 +1,2 @@
 #!/bin/sh
-mv $(System.DefaultWorkingDirectory)/book-a-ticket/ /var/www/html/wordpress/
+mv /deployTemp/_aravindemmadishetty_book-a-ticket /var/www/html/wordpress/
