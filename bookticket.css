@@ -1,0 +1,413 @@
+html{
+	font-family: consolas;
+	font-size: 16px;
+	background: linear-gradient( 120deg, #2196f3, #e91e63);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+body{
+	padding: 10px;
+	overflow: auto;
+}
+.wrapper{
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrapper .title-logo{
+    height: 100px;
+    width: 300px;
+    margin-bottom: 50px;
+	text-align: center;
+}
+
+.title-logo p{
+	margin: 0;
+	font-size: 40px;
+	color: #c02c39;
+	font-family: cursive;
+	text-shadow: -3px 2px 0 #ffffff, -3px 2px 0 #ffffff;
+}
+
+.title-logo span{
+	color: #c02c39;
+	font-family: cursive;
+	text-shadow: -3px 2px 0 #ffffff, -3px 2px 0 #ffffff;
+}
+
+/*
+button, label, input, select, progress, meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+*/
+.btn{
+	background: #e91e63;
+	height: 40px;
+}
+
+form{
+	background: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	padding: 15px 10px;
+}
+
+form label{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+button{
+	cursor: pointer;
+	background: #c02c39;
+	border: none;
+	padding: 10px;
+	color: white;
+}
+button:hover{
+	background: #c02c39ad;
+}
+
+button:disabled {
+	background: #c02c3952;
+}
+
+input[type=submit]{
+	background: #c02c39;
+	border: none;
+	padding: 10px;
+	color: white;
+}
+
+input[type="submit"]:hover {
+    background: #c02c39ad;
+}
+
+form>div{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 5px;
+	
+}
+
+form>div:last-child{
+	align-items: center;
+}
+
+form select {
+	width: 300px;
+    display: inline-block;
+    height: 35px;
+    border-radius: 5px;
+	border: none;
+	border-bottom: 2px solid;
+}
+
+form select:focus{
+	outline: none;
+}
+
+form span{
+	font-size: 13px;
+    background: #de0606a6;
+    display: inline-block;
+    height: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+form span:empty{
+	height: 0;
+}
+
+.previous{
+	background: #e91e63;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+svg{
+	fill: #ffffff;
+}
+.reserve{
+	display: none;
+	background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 20px;
+}
+
+/*
+.style{
+	display: flex;
+	flex-direction: column;
+}
+*/
+
+.style-reserve{
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+.movie-details{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	color: #e91e63;
+}
+
+.movie-details p{
+	font-weight: bold;
+	margin: 5px;
+}
+
+.movie-details p:first-child{
+	font-size: 24px;
+}
+
+
+
+.movie-details p:last-child{
+	   margin-top: -10px;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.content> div {
+    flex: 0 1 20px;
+    margin: 0px 1px;
+	width : 20px;
+}
+
+.content> .rows{
+	margin-right: 5px;
+}
+
+
+.info span {
+    font-size: 16px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: -5px 2px 6px;
+    text-align: center;
+}
+
+.movie-details span{
+	display: inline;
+	width: auto;
+	font-weight: normal;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 2px 1px;
+}
+
+.next{
+	text-align: center;
+}
+.payment-page{
+	display: none;
+	background: rgba(255,255,255,0.6);
+}
+
+.image>img{
+	max-height: 270px;
+}
+
+.details .movie-details {
+    align-items: flex-start;
+}
+
+.details .movie-details p{
+	font-size: 16px;
+	color: black;
+	margin:0;
+}
+
+.details .movie-details .movie-name{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0;
+	color: #c02c39;
+}
+
+.details .image{
+	margin-right: 20px;
+}
+
+.other-details p{
+	margin: 5px 0;
+}
+
+.style-payment>div:first-child>div:last-child{
+	text-align: center;
+}
+
+.style-payment{
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+.seat-details span{
+	display: inline-block;
+    height: 30px;
+    min-width: 25px;
+    font-size: 24px;
+    /* box-shadow: 1px 1px 5px rgb(100 100 100), -1px -1px 5px rgb(100 100 100); */
+}
+
+.seat-details>p{
+	margin: 0;
+}
+
+.price-details>p {
+    margin: 0;
+}
+
+.style-payment .details{
+	padding: 10px 20px 10px;
+}
+	
+.popup{
+	display: none
+}
+
+.style-popup{
+	display: flex;
+	height: 100%;
+	width:100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+}
+
+.style-popup>div{
+	height: 150px;
+	background: white;
+	padding: 10px;
+	width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.style-popup>div>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button.yes{
+	margin: 10px 60px 10px 0;
+}
+
+.final{
+	display: none;
+}
+.style-final{
+	display: flex;
+	height: 100%;
+	width:100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+}
+
+.style-final>div{
+	font-size: 25px;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 40em){
+	
+	body{
+		width: 70%;
+		margin: auto;
+	}
+	.info span{
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		margin: 5px 0px;
+		text-align: center;
+	}
+	
+	.movie-details span{
+		display: inline;
+		width: auto;
+		font-weight: normal;
+	}
+	
+	.content> div{
+		flex: 0 1 35px;
+	}
+	
+	input[type=checkbox]{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin: 5px 0px;
+	}
+	
+	.style-payment .details{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		padding: 10px 30px 10px;
+	}
+	
+	.details .image{
+		grid-row: 1/5;
+	}
+	
+	.style-popup>div{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		height: 200px;
+		width: 400px;
+	}
+	
+	.style-final>div{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 200px;
+		width: 400px;
+	}
+	
+}
